@@ -1,0 +1,20 @@
+{
+	"code": "ore-gem-rough",
+	"variants": [
+		{
+			"Code": "diamond"
+		},
+		{
+			"Code": "emerald"
+		},
+		{
+			"Code": "olivine_peridot"
+		},
+		{
+			"Code": "ruby"
+		},
+		{
+			"Code": "sapphire"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"type": "content",
+	"modid": "goldblockmod",
+	"name": "Gold Block Mod",
+	"description": "Adds a gold block to the game",
+	"authors": [ "pepaigea" ],
+	"version": "1.0",
+	"dependencies": {
+		"game": "",
+		"survival": ""
+	},
+	"website": "http://www.google.com"
+}

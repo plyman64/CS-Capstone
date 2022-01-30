@@ -1,0 +1,54 @@
+{
+	"code": "wand",
+	"creativeInventory": {
+		"general": [ "*" ]
+	},
+  "texture": {
+    "base": "item/wand",
+    "overlays": ["item/wand-overlay-{tooltype}"]
+  },
+
+  "miningspeedByType": {
+    "*-shovel": {
+      "soil": 7,
+      "sand": 7,
+      "gravel": 4.4
+    },
+    "*-pickaxe": {
+      "stone": 7,
+      "metal": 7
+    },
+    "*-axe": {
+      "wood": 6,
+      "leaves": 4
+    }
+  },
+
+  "damagedby": [ "blockbreaking", "attacking" ],
+
+  "durabilityByType": {
+    "*-axe": 2000,
+    "*-pickaxe": 3000,
+    "*-shovel": 4000
+  },
+
+  "variantgroups": [
+    {
+      "code": "tooltype",
+      "states": [ "shovel", "pickaxe", "axe" ]
+    }
+  ],
+
+  "dropsByType": {
+    "*": [
+      {
+        "type": "item",
+        "code": "stone-{rock}",
+        "quantity": {
+          "avg": 2.5,
+          "var": 0.5
+        }
+      }
+    ]
+  }
+}
