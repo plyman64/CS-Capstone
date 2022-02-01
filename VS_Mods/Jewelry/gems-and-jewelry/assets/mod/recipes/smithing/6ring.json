@@ -1,0 +1,27 @@
+{
+	"ingredient": {
+		"type": "item",
+		"code": "ingot-*",
+		"name": "metal",
+		"allowedvariants": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
+	},
+	"pattern": [
+		[
+			"____#____",
+			"___#_#___",
+			"_#__#__#_",
+			"#_#___#_#",
+			"_#__#__#_",
+			"___#_#___",
+			"_#__#__#_",
+			"#_#___#_#",
+			"_#_____#_"
+		]
+	],
+	"name": "6 Rings",
+	"output": {
+		"type": "item",
+		"code": "ring-{metal}",
+		"stacksize": 6
+	}
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "op": "add",
+    "path": "/allowedVariants/21",
+    "value": "ore-low-ruby-basalt",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/22",
+    "value": "ore-medium-ruby-basalt",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/23",
+    "value": "ore-high-ruby-basalt",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/24",
+    "value": "ore-low-ruby-slate",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/25",
+    "value": "ore-medium-ruby-slate",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/26",
+    "value": "ore-high-ruby-slate",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/27",
+    "value": "ore-low-sapphire-basalt",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/28",
+    "value": "ore-medium-sapphire-basalt",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/29",
+    "value": "ore-high-sapphire-basalt",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/30",
+    "value": "ore-low-sapphire-slate",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/31",
+    "value": "ore-medium-sapphire-slate",
+    "file": "blocktypes/stone/ore-gem.json"
+  },
+  {
+    "op": "add",
+    "path": "/allowedVariants/32",
+    "value": "ore-high-sapphire-slate",
+    "file": "blocktypes/stone/ore-gem.json"
+  }
+]

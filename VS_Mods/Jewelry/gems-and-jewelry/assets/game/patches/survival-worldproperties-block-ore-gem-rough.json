@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/variants/3",
+    "value": {
+      "Code": "ruby"
+    },
+    "file": "worldproperties/block/ore-gem-rough.json"
+  },
+  {
+    "op": "add",
+    "path": "/variants/4",
+    "value": {
+      "Code": "sapphire"
+    },
+    "file": "worldproperties/block/ore-gem-rough.json"
+  }
+]

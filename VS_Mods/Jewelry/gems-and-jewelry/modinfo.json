@@ -1,0 +1,18 @@
+{
+  "Type": 1,
+  "TextureSize": 32,
+  "Name": "gems-and-jewelry",
+  "Version": "",
+  "NetworkVersion": null,
+  "Description": "",
+  "Website": "",
+  "ModID": "gems-and-jewelry",
+  "Authors": [
+    "pepaigea"
+  ],
+  "Contributors": [],
+  "Side": "Universal",
+  "RequiredOnClient": true,
+  "RequiredOnServer": true,
+  "Dependencies": {}
+}
