@@ -1,7 +1,7 @@
 {
 	"ingredient": {
 		"type": "item",
-		"code": "ingot-*",
+		"code": "game:ingot-*",
 		"name": "metal",
 		"allowedvariants": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
 	},
