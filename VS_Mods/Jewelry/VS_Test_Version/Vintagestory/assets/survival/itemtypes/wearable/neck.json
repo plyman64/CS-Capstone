@@ -3,10 +3,35 @@
 	class: "ItemWearable",
 	variantgroups: [
 		{ code: "category",  states: ["neck"] },
-		{ code: "neck", combine: "SelectiveMultiply", onVariant: "category", states: [
-			"bronze-gem-necklace", "copper-torc", "fancy-royal-collar", "golden-necklace", "merchant-amulet", "noble-necklace", "pearl-necklace",
-			"forlorn-talisman", "acorn-amulet", "cypress-seed-amulet", "larch-seed-amulet", "pinecone-amulet", "redwood-amulet", "walnut-amulet"
-		] },
+		{
+			code: "neck",
+			combine: "SelectiveMultiply",
+			onVariant: "category",
+			states: [
+				"bronze-gem-necklace",
+				"copper-torc",
+				"fancy-royal-collar",
+				"golden-necklace",
+				"merchant-amulet",
+				"noble-necklace",
+				"pearl-necklace",
+				"forlorn-talisman",
+				"acorn-amulet",
+				"cypress-seed-amulet",
+				"larch-seed-amulet",
+				"pinecone-amulet",
+				"redwood-amulet",
+				"walnut-amulet",
+
+				"necklace-copper",
+				"necklace-brass",
+				"necklace-tinbronze",
+				"necklace-bismuthbronze",
+				"necklace-blackbronze",
+				"necklace-silver",
+				"necklace-gold"
+			]
+		},
 	],
 	shapeByType: {
 		"@*-(pearl-necklace|forlorn-talisman)": {
@@ -30,10 +55,13 @@
 	},
 	texturesByType: {
 		"@*-(pearl-necklace|forlorn-talisman)": {
-			"seraph": { base: "entity/humanoid/seraphclothes/{category}/{neck}" }
+			"seraph": { "base": "entity/humanoid/seraphclothes/{category}/{neck}" }
+		},
+		"@*-necklace-{metal}": {
+			"seraph": { "base": "block/metal/plate/{metal}" }
 		},
 		"*": {
-			"seraph": { base: "block/transparent" }
+			"seraph": { "base": "block/transparent" }
 		}
 	},
 	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"] },

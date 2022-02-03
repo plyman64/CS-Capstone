@@ -21,7 +21,7 @@
 	"name": "2 Necklaces",
 	"output": {
 		"type": "item",
-		"code": "necklace-{metal}",
+		"code": "clothes-neck-necklace-{metal}",
 		"stacksize": 2
 	}
 }
