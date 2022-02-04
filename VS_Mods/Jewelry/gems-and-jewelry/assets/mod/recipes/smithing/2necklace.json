@@ -1,25 +1,27 @@
 {
 	"ingredient": {
 		"type": "item",
-		"code": "ingot-*",
+		"code": "game:ingot-*",
 		"name": "metal",
 		"allowedvariants": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
 	},
 	"pattern": [
 		[
-			"__###___",
-			"_#___#__",
-			"#____#__",
-			"#_____#_",
-			"#_____#_",
-			"_##__#__",
-			"___##_##",
-			"______##"
+			"_______#__",
+			"__#___#_#_",
+			"_###_#___#",
+			"__#__#___#",
+			"_#_#__#_#_",
+			"#___#__#__",
+			"#___#_###_",
+			"_#_#___#__",
+			"__#_______"
 		]
 	],
-	"name": "Necklace",
+	"name": "2 Necklaces",
 	"output": {
 		"type": "item",
-		"code": "clothes-neck-necklace-{metal}",
+		"code": "game:clothes-neck-necklace-{metal}",
+		"stacksize": 2
 	}
 }

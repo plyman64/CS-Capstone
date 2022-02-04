@@ -1,7 +1,7 @@
 {
 	"ingredient": {
 		"type": "item",
-		"code": "ingot-*",
+		"code": "game:ingot-*",
 		"name": "metal",
 		"allowedvariants": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
 	},
@@ -21,7 +21,7 @@
 	"name": "6 Rings",
 	"output": {
 		"type": "item",
-		"code": "clothes-ring-{metal}",
+		"code": "game:clothes-ring-{metal}",
 		"stacksize": 6
 	}
 }

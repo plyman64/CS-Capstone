@@ -1,0 +1,54 @@
+[
+  {
+    "op": "add",
+    "path": "/texturesByType/@*-necklace-{metal}",
+    "value": {
+      "seraph": {
+        "base": "block/metal/plate/{metal}"
+      }
+    },
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/14",
+    "value": "necklace-copper",
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/15",
+    "value": "necklace-brass",
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/16",
+    "value": "necklace-tinbronze",
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/17",
+    "value": "necklace-bismuthbronze",
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/18",
+    "value": "necklace-blackbronze",
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/19",
+    "value": "necklace-silver",
+    "file": "itemtypes/wearable/neck.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/20",
+    "value": "necklace-gold",
+    "file": "itemtypes/wearable/neck.json"
+  }
+]
