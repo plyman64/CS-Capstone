@@ -29,7 +29,13 @@
 				"necklace-bismuthbronze",
 				"necklace-blackbronze",
 				"necklace-silver",
-				"necklace-gold"
+				"necklace-gold",
+
+				"necklace-copper-ruby", "necklace-brass-ruby", "necklace-tinbronze-ruby", "necklace-blackbronze-ruby", "necklace-bismuthbronze-ruby", "necklace-silver-ruby", "necklace-gold-ruby",
+				"necklace-copper-sapphire", "necklace-brass-sapphire", "necklace-tinbronze-sapphire", "necklace-blackbronze-sapphire", "necklace-bismuthbronze-sapphire", "necklace-silver-sapphire", "necklace-gold-sapphire",
+				"necklace-copper-diamond", "necklace-brass-diamond", "necklace-tinbronze-diamond", "necklace-blackbronze-diamond", "necklace-bismuthbronze-diamond", "necklace-silver-diamond", "necklace-gold-diamond",
+				"necklace-copper-emerald", "necklace-brass-emerald", "necklace-tinbronze-emerald", "necklace-blackbronze-emerald", "necklace-bismuthbronze-emerald", "necklace-silver-emerald", "necklace-gold-emerald",
+				"necklace-copper-peridot", "necklace-brass-peridot", "necklace-tinbronze-peridot", "necklace-blackbronze-peridot", "necklace-bismuthbronze-peridot", "necklace-silver-peridot", "necklace-gold-peridot",
 			]
 		},
 	],

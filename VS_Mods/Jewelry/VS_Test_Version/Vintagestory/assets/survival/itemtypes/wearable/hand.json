@@ -5,7 +5,15 @@
 		{ code: "category",  states: ["hand"] },
 		{ code: "hand", combine: "SelectiveMultiply", onVariant: "category", states: [
 			"fur-gloves", "heavy-leather-gloves", "laced-handsome-gloves", "lackey-gloves", "minstrel-gloves", "noble-riding-gloves",  "prince-gloves",
-			"clockmaker-wristguard", "hunter-gloves", "malefactor-gloves", "forlorn-bracer", "commoner-gloves", "tailor-gloves"
+			"clockmaker-wristguard", "hunter-gloves", "malefactor-gloves", "forlorn-bracer", "commoner-gloves", "tailor-gloves",
+
+			"ring-copper", "ring-brass", "ring-tinbronze", "ring-blackbronze", "ring-bismuthbronze", "ring-silver", "ring-gold",
+
+			"ring-copper-ruby", "ring-brass-ruby", "ring-tinbronze-ruby", "ring-blackbronze-ruby", "ring-bismuthbronze-ruby", "ring-silver-ruby", "ring-gold-ruby",
+			"ring-copper-sapphire", "ring-brass-sapphire", "ring-tinbronze-sapphire", "ring-blackbronze-sapphire", "ring-bismuthbronze-sapphire", "ring-silver-sapphire", "ring-gold-sapphire",
+			"ring-copper-diamond", "ring-brass-diamond", "ring-tinbronze-diamond", "ring-blackbronze-diamond", "ring-bismuthbronze-diamond", "ring-silver-diamond", "ring-gold-diamond",
+			"ring-copper-emerald", "ring-brass-emerald", "ring-tinbronze-emerald", "ring-blackbronze-emerald", "ring-bismuthbronze-emerald", "ring-silver-emerald", "ring-gold-emerald",
+			"ring-copper-peridot", "ring-brass-peridot", "ring-tinbronze-peridot", "ring-blackbronze-peridot", "ring-bismuthbronze-peridot", "ring-silver-peridot", "ring-gold-peridot",
 		] },
 	],
 	shapeByType: {

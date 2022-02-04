@@ -21,7 +21,7 @@
 	"name": "2 Necklaces",
 	"output": {
 		"type": "item",
-		"code": "clothes-neck-necklace-{metal}",
+		"code": "game:clothes-neck-necklace-{metal}",
 		"stacksize": 2
 	}
 }
