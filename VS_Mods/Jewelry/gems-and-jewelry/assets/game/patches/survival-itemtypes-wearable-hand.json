@@ -1,6 +1,85 @@
 [
   {
     "op": "add",
+    "path": "/attributesByType/*ring",
+    "value": {
+      "clothescategory": "hand",
+      "warmth": 0
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-bismuthbronze*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/bismuthbronze"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-blackbronze*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/blackbronze"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-brass*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/brass"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-copper*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/copper"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-gold*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/gold"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-silver*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/silver"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*-ring-tinbronze*",
+    "value": {
+      "seraph": {
+        "base": "entity/humanoid/seraphclothes/hand/rings-plain/tinbronze"
+      }
+    },
+    "file": "itemtypes/wearable/hand.json"
+  },
+  {
+    "op": "add",
     "path": "/variantgroups/1/states/13",
     "value": "ring-copper",
     "file": "itemtypes/wearable/hand.json"

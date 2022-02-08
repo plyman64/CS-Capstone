@@ -43,6 +43,10 @@
 			clothescategory: "hand",
 			warmth: 1.5
 		},
+		"*ring": {
+			"clothescategory": "hand",
+			"warmth": 0
+		},
 		"*": {
 			clothescategory: "hand",
 			warmth: 0.5
@@ -50,13 +54,34 @@
 	},
 	texturesByType: {
 		"*-clockmaker-wristguard": {
-			"seraph": { base: "block/transparent" }
+			"seraph": { "base": "block/transparent" }
 		},
 		"*-commoner-gloves": {
-			"seraph": { base: "block/transparent" }
+			"seraph": { "base": "block/transparent" }
+		},
+		"*-ring-copper*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/copper" }
+		},
+		"*-ring-brass*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/brass" }
+		},
+		"*-ring-tinbronze*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/tinbronze" }
+		},
+		"*-ring-bismuthbronze*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/bismuthbronze" }
+		},
+		"*-ring-blackbronze*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/blackbronze" }
+		},
+		"*-ring-silver*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/silver" }
+		},
+		"*-ring-gold*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/hand/rings-plain/gold" }
 		},
 		"*": {
-			"seraph": { base: "entity/humanoid/seraphclothes/{category}/{hand}" }
+			"seraph": { "base": "entity/humanoid/seraphclothes/{category}/{hand}" }
 		}
 	},
 	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"] },

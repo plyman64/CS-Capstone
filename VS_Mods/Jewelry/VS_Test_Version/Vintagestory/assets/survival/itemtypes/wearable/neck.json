@@ -35,15 +35,15 @@
 				"necklace-copper-sapphire", "necklace-brass-sapphire", "necklace-tinbronze-sapphire", "necklace-blackbronze-sapphire", "necklace-bismuthbronze-sapphire", "necklace-silver-sapphire", "necklace-gold-sapphire",
 				"necklace-copper-diamond", "necklace-brass-diamond", "necklace-tinbronze-diamond", "necklace-blackbronze-diamond", "necklace-bismuthbronze-diamond", "necklace-silver-diamond", "necklace-gold-diamond",
 				"necklace-copper-emerald", "necklace-brass-emerald", "necklace-tinbronze-emerald", "necklace-blackbronze-emerald", "necklace-bismuthbronze-emerald", "necklace-silver-emerald", "necklace-gold-emerald",
-				"necklace-copper-peridot", "necklace-brass-peridot", "necklace-tinbronze-peridot", "necklace-blackbronze-peridot", "necklace-bismuthbronze-peridot", "necklace-silver-peridot", "necklace-gold-peridot",
+				"necklace-copper-peridot", "necklace-brass-peridot", "necklace-tinbronze-peridot", "necklace-blackbronze-peridot", "necklace-bismuthbronze-peridot", "necklace-silver-peridot", "necklace-gold-peridot"
 			]
-		},
+		}
 	],
 	shapeByType: {
 		"@*-(pearl-necklace|forlorn-talisman)": {
 			base: "entity/humanoid/seraph" 
 		},
-		"@*": {
+		"*": {
 			base: "entity/humanoid/seraph/clothing/neck/{neck}" 
 		}
 	},
@@ -63,8 +63,26 @@
 		"@*-(pearl-necklace|forlorn-talisman)": {
 			"seraph": { "base": "entity/humanoid/seraphclothes/{category}/{neck}" }
 		},
-		"@*-necklace-{metal}": {
-			"seraph": { "base": "block/metal/plate/{metal}" }
+		"*-necklace-copper*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/copper" }
+		},
+		"*-necklace-tinbronze*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/tinbronze" }
+		},
+		"*-necklace-blackbronze*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/blackbronze" }
+		},
+		"*-necklace-bismuthbronze*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/bismuthbronze" }
+		},
+		"*-necklace-brass*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/brass" }
+		},
+		"*-necklace-silver*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/silver" }
+		},
+		"*-necklace-gold*": {
+			"seraph": { "base": "entity/humanoid/seraphclothes/neck/necklaces-plain/gold" }
 		},
 		"*": {
 			"seraph": { "base": "block/transparent" }

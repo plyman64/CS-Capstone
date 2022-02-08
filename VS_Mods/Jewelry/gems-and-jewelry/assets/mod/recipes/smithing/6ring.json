@@ -21,7 +21,7 @@
 	"name": "6 Rings",
 	"output": {
 		"type": "item",
-		"code": "game:clothes-ring-{metal}",
+		"code": "game:clothes-hand-ring-{metal}",
 		"stacksize": 6
 	}
 }
