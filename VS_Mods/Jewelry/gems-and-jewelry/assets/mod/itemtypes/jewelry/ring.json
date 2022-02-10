@@ -9,7 +9,7 @@
 	],
 	"shape": {
 		"*": {
-			"base": "entity/humanoid/seraph"
+			"base": "entity/humanoid/seraph/clothing/hand/forlorn-bracer"
 		}
 	},
 	"storageFlags": 128,
