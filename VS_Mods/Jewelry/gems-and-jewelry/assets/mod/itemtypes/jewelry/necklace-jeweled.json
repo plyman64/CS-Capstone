@@ -1,0 +1,131 @@
+{
+	"code": "necklace-jeweled",
+	"class": "ItemWearable",
+	"variantgroups": [
+		{
+			"code": "metal",
+			"states": [ "copper", "brass", "tinbronze", "bismuthbonze", "blackbronze", "silver", "gold" ]
+		},
+		{
+			"code": "gem",
+			"states": [ "ruby", "sapphire", "emerald", "diamond", "peridot" ]
+		}
+	],
+	"shape": {
+		"@*": {
+			"base": "entity/humanoid/seraph/clothing/neck/{neck}"
+		}
+	},
+	"storageFlags": 128,
+	"attributes": {
+		"*": {
+			"wearableAttachment": true,
+			"clothescategory": "neck",
+			"warmth": 0
+		}
+	},
+	"texturesByType": {
+		"@*-copper*": {
+			"seraph": { "base": "block/metal/plate/copper" }
+		},
+		"@*-brass*": {
+			"seraph": { "base": "block/metal/plate/brass" }
+		},
+		"@*-tinbronze*": {
+			"seraph": { "base": "block/metal/plate/tinbronze" }
+		},
+		"@*-bismuthbronze*": {
+			"seraph": { "base": "block/metal/plate/bismuthbronze" }
+		},
+		"@*-blackbronze*": {
+			"seraph": { "base": "block/metal/plate/blackbronze" }
+		},
+		"@*-silver*": {
+			"seraph": { "base": "block/metal/plate/silver" }
+		},
+		"@*-gold*": {
+			"seraph": { "base": "block/metal/plate/gold" }
+		},
+		"*": {
+			"seraph": { "base": "block/transparent" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"clothing": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"fpHandTransform": {
+		"translation": {
+			"x": 0.2,
+			"y": -2.5,
+			"z": -0.9
+		},
+		"rotation": {
+			"x": -2,
+			"y": 31,
+			"z": -46
+		},
+		"scale": 4.09
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.6,
+			"y": -2.1,
+			"z": -0.7
+		},
+		"rotation": {
+			"x": -21,
+			"y": -180,
+			"z": 25
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 1.4,
+			"z": 0.5
+		},
+		"scale": 0.71
+	},
+	"guiTransform": {
+		"*": {
+			"rotate": false,
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 174,
+				"y": -128,
+				"z": 6
+			},
+			"origin": {
+				"x": 0.45,
+				"y": 1.43,
+				"z": 0.54
+			},
+			"scale": 3.5
+		}
+	},
+	"groundTransform": {
+		"*": {
+			"translation": {
+				"x": 0,
+				"y": -0.05,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -90
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 3.06
+		}
+	}
+}

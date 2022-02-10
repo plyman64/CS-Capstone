@@ -1,0 +1,119 @@
+{
+	"code": "ring-jeweled",
+	"class": "ItemWearable",
+	"variantgroups": [
+		{
+			"code": "category",
+			"states": [ "hand" ]
+		},
+		{
+			"code": "gem",
+			"states": [ "ruby", "sapphire", "emerald", "diamond", "peridot" ]
+		}
+	],
+	"shape": {
+		"*": {
+			"base": "entity/humanoid/seraph"
+		}
+	},
+	"storageFlags": 128,
+	"attributes": {
+		"*": {
+			"wearableAttachment": true,
+			"clothescategory": "hand",
+			"warmth": 0
+		}
+	},
+	"texturesByType": {
+		"@*-copper*": {
+			"seraph": { "base": "block/metal/plate/copper" }
+		},
+		"@*-brass*": {
+			"seraph": { "base": "block/metal/plate/brass" }
+		},
+		"@*-tinbronze*": {
+			"seraph": { "base": "block/metal/plate/tinbronze" }
+		},
+		"@*-bismuthbronze*": {
+			"seraph": { "base": "block/metal/plate/bismuthbronze" }
+		},
+		"@*-blackbronze*": {
+			"seraph": { "base": "block/metal/plate/blackbronze" }
+		},
+		"@*-silver*": {
+			"seraph": { "base": "block/metal/plate/silver" }
+		},
+		"@*-gold*": {
+			"seraph": { "base": "block/metal/plate/gold" }
+		},
+		"*": {
+			"seraph": { "base": "block/transparent" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"clothing": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"fpHandTransform": {
+		"translation": {
+			"x": 0.6,
+			"y": 0,
+			"z": -0.5
+		},
+		"rotation": {
+			"x": 180,
+			"y": 42,
+			"z": -29
+		},
+		"scale": 2.5
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.9,
+			"y": -1,
+			"z": -1
+		},
+		"rotation": {
+			"x": -13,
+			"y": -64,
+			"z": 49
+		},
+		"scale": 0.55
+	},
+	"guiTransform": {
+		"*": {
+			"rotate": false,
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 19
+			},
+			"rotation": {
+				"x": 174,
+				"y": -30,
+				"z": 23
+			},
+			"origin": {
+				"x": 0.52,
+				"y": 0.78,
+				"z": 0.5
+			},
+			"scale": 2.5
+		}
+	},
+	"groundTransform": {
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 90
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.5,
+			"z": 0.5299
+		},
+		"scale": 3.04
+	}
+}
