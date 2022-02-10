@@ -1,16 +1,16 @@
 {
 	"code": "ring-jeweled",
 	"class": "ItemWearable",
-	"variantgroups": [
-		{
-			"code": "category",
-			"states": [ "hand" ]
-		},
-		{
-			"code": "gem",
-			"states": [ "ruby", "sapphire", "emerald", "diamond", "peridot" ]
-		}
-	],
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [ "copper", "brass", "tinbronze", "bismuthbonze", "blackbronze", "silver", "gold" ]
+    },
+    {
+      "code": "gem",
+      "states": [ "ruby", "sapphire", "emerald", "diamond", "peridot" ]
+    }
+  ],
 	"shape": {
 		"*": {
 			"base": "entity/humanoid/seraph"

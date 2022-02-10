@@ -8,7 +8,7 @@
 		}
 	],
 	"shape": {
-		"@*": {
+		"*": {
 			"base": "entity/humanoid/seraph/clothing/neck/{neck}"
 		}
 	},
