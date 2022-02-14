@@ -12,42 +12,38 @@
     }
   ],
 	"shape": {
-		"*": {
-			"base": "entity/humanoid/seraph/clothing/hand/forlorn-bracer"
-		}
+		"base": "game:entity/humanoid/seraph/clothing/hand/commoner-gloves"
 	},
 	"storageFlags": 128,
 	"attributes": {
-		"*": {
-			"wearableAttachment": true,
-			"clothescategory": "hand",
-			"warmth": 0
-		}
+		"wearableAttachment": true,
+		"clothescategory": "hand",
+		"warmth": 0
 	},
 	"texturesByType": {
-		"@*-copper*": {
-			"seraph": { "base": "block/metal/plate/copper" }
+		"*-copper-*": {
+			"base": "game:block/metal/plate/copper"
 		},
-		"@*-brass*": {
-			"seraph": { "base": "block/metal/plate/brass" }
+		"*-brass-*": {
+			"base": "game:block/metal/plate/brass"
 		},
-		"@*-tinbronze*": {
-			"seraph": { "base": "block/metal/plate/tinbronze" }
+		"*-tinbronze-*": {
+			"base": "game:block/metal/plate/tinbronze"
 		},
-		"@*-bismuthbronze*": {
-			"seraph": { "base": "block/metal/plate/bismuthbronze" }
+		"*-bismuthbronze-*": {
+			"base": "game:block/metal/plate/bismuthbronze"
 		},
-		"@*-blackbronze*": {
-			"seraph": { "base": "block/metal/plate/blackbronze" }
+		"*-blackbronze-*": {
+			"base": "game:block/metal/plate/blackbronze"
 		},
-		"@*-silver*": {
-			"seraph": { "base": "block/metal/plate/silver" }
+		"*-silver-*": {
+			"base": "game:block/metal/plate/silver"
 		},
-		"@*-gold*": {
-			"seraph": { "base": "block/metal/plate/gold" }
+		"*-gold-*": {
+			"base": "game:block/metal/plate/gold"
 		},
 		"*": {
-			"seraph": { "base": "block/transparent" }
+			"seraph": { "base": "game:block/transparent" }
 		}
 	},
 	"creativeinventory": {
@@ -83,25 +79,23 @@
 		"scale": 0.55
 	},
 	"guiTransform": {
-		"*": {
-			"rotate": false,
-			"translation": {
-				"x": 0,
-				"y": 0,
-				"z": 19
-			},
-			"rotation": {
-				"x": 174,
-				"y": -30,
-				"z": 23
-			},
-			"origin": {
-				"x": 0.52,
-				"y": 0.78,
-				"z": 0.5
-			},
-			"scale": 2.5
-		}
+		"rotate": false,
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 19
+		},
+		"rotation": {
+			"x": 174,
+			"y": -30,
+			"z": 23
+		},
+		"origin": {
+			"x": 0.52,
+			"y": 0.78,
+			"z": 0.5
+		},
+		"scale": 2.5
 	},
 	"groundTransform": {
 		"rotation": {

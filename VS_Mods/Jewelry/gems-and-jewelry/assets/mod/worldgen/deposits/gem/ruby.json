@@ -3,7 +3,7 @@
 		"code": "ruby",
 		"triesPerChunk": 64,
 		"withOreMap": true,
-		"handbookPageCode": "item-gem-ruby-rough",
+		"handbookPageCode": "Ruby",
 		"generator": "disc-followsealevel",
 		"attributes": {
 			"inblock": {
