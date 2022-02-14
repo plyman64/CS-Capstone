@@ -21,26 +21,8 @@
 		"warmth": 0
 	},
 	"texturesByType": {
-		"*-copper-*": {
-			"base": "game:block/metal/plate/copper" 
-		},
-		"*-brass-*": {
-			"base": "game:block/metal/plate/brass" 
-		},
-		"*-tinbronze-*": {
-			"base": "game:block/metal/plate/tinbronze"
-		},
-		"*-bismuthbronze-*": {
-			"base": "game:block/metal/plate/bismuthbronze"
-		},
-		"*-blackbronze-*": {
-			"base": "game:block/metal/plate/blackbronze"
-		},
-		"*-silver-*": {
-			"base": "game:block/metal/plate/silver"
-		},
-		"*-gold-*": {
-			"base": "game:block/metal/plate/gold"
+		"*": {
+			"base": "entity/humanoid/seraphclothes/necklace-jeweled/{gem}/{metal}-{gem}"
 		},
 		"*": {
 			"seraph": { "base": "game:block/transparent" }
