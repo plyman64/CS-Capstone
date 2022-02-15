@@ -12,7 +12,7 @@
 		}
 	],
 	"shape": {
-		"base": "game:entity/humanoid/seraph/clothing/neck/noble-necklace"
+		"base": "entity/humanoid/seraph/clothing/neck/necklace-jeweled"
 	},
 	"storageFlags": 128,
 	"attributes": {
