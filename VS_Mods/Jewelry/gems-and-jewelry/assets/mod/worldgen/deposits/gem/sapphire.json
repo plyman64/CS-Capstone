@@ -3,7 +3,7 @@
 		"code": "sapphire",
 		"triesPerChunk": 64,
 		"withOreMap": true,
-		"handbookPageCode": "Sapphire",
+		"handbookPageCode": "item-gem-sapphire-rough",
 		"generator": "disc-followsealevel",
 		"attributes": {
 			"inblock": {

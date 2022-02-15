@@ -6,7 +6,7 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textures": {
-		"sapphire": "block/stone/gem/sapphire"
+		"sapphire": "game:block/stone/gem/sapphire"
 	},
 	"elements": [
 		{

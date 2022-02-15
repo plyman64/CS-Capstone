@@ -4,29 +4,27 @@
   "variantgroups": [
     {
       "code": "metal",
-      "states": [ "copper", "brass", "tinbronze", "bismuthbonze", "blackbronze", "silver", "gold" ]
+      "states": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
     },
     {
       "code": "gem",
-      "states": [ "ruby", "sapphire", "emerald", "diamond", "peridot" ]
+      "states": [ "ruby", "sapphire", "emerald", "diamond" ]
     }
   ],
 	"shape": {
-		"base": "game:entity/humanoid/seraph/clothing/hand/commoner-gloves"
+		"base": "entity/humanoid/seraph/clothing/ring-jeweled"
 	},
 	"storageFlags": 128,
 	"attributes": {
 		"wearableAttachment": true,
 		"clothescategory": "hand",
-		"warmth": 0
+		"warmth": 0,
+		"displaycaseable": true,
+		"shelvable": true
 	},
-	"texturesByType": {
-		"gem": {
-			"base": "entity/humanoid/seraphclothes/ring-jeweled/{gem}/{metal}-{gem}"
-		},
-		"*": {
-			"seraph": { "base": "game:block/transparent" }
-		}
+	"textures": {
+		"metal": { "base": "game:block/metal/plate/{metal}" },
+		"seraph": { "base": "game:block/transparent" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],

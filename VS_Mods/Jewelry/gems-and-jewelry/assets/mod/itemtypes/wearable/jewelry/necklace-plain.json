@@ -1,5 +1,5 @@
 {
-	"code": "necklace",
+	"code": "necklace-plain",
 	"class": "ItemWearable",
 	"variantgroups": [
 		{
@@ -8,21 +8,19 @@
 		}
 	],
 	"shape": {
-		"base": "entity/humanoid/seraph/clothing/neck/necklace"
+		"base": "entity/humanoid/seraph/clothing/necklace-plain"
 	},
 	"storageFlags": 128,
 	"attributes": {
 		"wearableAttachment": true,
 		"clothescategory": "neck",
-		"warmth": 0
+		"warmth": 0,
+		"displaycaseable": true,
+		"shelvable": true
 	},
-	"texturesByType": {
-		"metal": {
-			"base": "game:block/metal/plate/{metal}"
-		},
-		"*": {
-			"seraph": { "base": "game:block/transparent" }
-		}
+	"textures": {
+		"metal": { "base": "game:block/metal/plate/{metal}" },
+		"seraph": { "base": "game:block/transparent" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],

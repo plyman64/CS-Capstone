@@ -8,25 +8,24 @@
 		},
 		{
 			"code": "gem",
-			"states": [ "ruby", "sapphire", "emerald", "diamond", "peridot" ]
+			"states": [ "ruby", "sapphire", "emerald", "diamond" ]
 		}
 	],
 	"shape": {
-		"base": "entity/humanoid/seraph/clothing/neck/necklace-jeweled"
+		"base": "entity/humanoid/seraph/clothing/necklace-jeweled"
 	},
 	"storageFlags": 128,
 	"attributes": {
 		"wearableAttachment": true,
 		"clothescategory": "neck",
-		"warmth": 0
+		"warmth": 0,
+		"displaycaseable": true,
+		"shelvable": true
 	},
-	"texturesByType": {
-		"*": {
-			"base": "entity/humanoid/seraphclothes/necklace-jeweled/{gem}/{metal}-{gem}"
-		},
-		"*": {
-			"seraph": { "base": "game:block/transparent" }
-		}
+	"textures": {
+		"metal": { "base": "game:block/metal/plate/{metal}" },
+		"gem": {"base": "game:block/stone/gem/{gem}"},
+		"seraph": { "base": "game:block/transparent" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],

@@ -1,5 +1,5 @@
 {
-	"code": "ring",
+	"code": "ring-plain",
 	"class": "ItemWearable",
 	"variantgroups": [
 		{
@@ -8,21 +8,19 @@
 		}
 	],
 	"shape": {
-		"base": "game:entity/humanoid/seraph/clothing/hand/commoner-gloves"
+		"base": "entity/humanoid/seraph/clothing/ring-plain"
 	},
 	"storageFlags": 128,
 	"attributes": {
 		"wearableAttachment": true,
 		"clothescategory": "hand",
-		"warmth": 0
+		"warmth": 0,
+		"displaycaseable": true,
+		"shelvable": true
 	},
-	"texturesByType": {
-		"metal": {
-			"base": "game:block/metal/plate/{metal}"
-		},
-		"*": {
-			"seraph": { "base": "game:block/transparent" }
-		}
+	"textures": {
+		"metal": { "base": "game:block/metal/plate/{metal}" },
+		"seraph": { "base": "game:block/transparent" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],

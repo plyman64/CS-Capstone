@@ -6,7 +6,7 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textures": {
-		"ruby": "block/stone/gem/ruby"
+		"ruby": "game:block/stone/gem/ruby"
 	},
 	"elements": [
 		{

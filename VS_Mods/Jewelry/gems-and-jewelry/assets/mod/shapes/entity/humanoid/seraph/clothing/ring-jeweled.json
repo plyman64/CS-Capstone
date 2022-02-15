@@ -10,7 +10,7 @@
 		"metal": [16, 16]
 	},
 	"textures": {
-		"metal": "entity/humanoid/seraphclothes/ring-jeweled/ruby/{metal}"
+		"metal": "game:block/metal/plate/{metal}"
 	},
 	"elements": [
 		{
