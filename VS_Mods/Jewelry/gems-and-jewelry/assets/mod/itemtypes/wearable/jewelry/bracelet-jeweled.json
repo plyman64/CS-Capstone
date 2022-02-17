@@ -1,5 +1,5 @@
 {
-	"code": "ring-jeweled",
+	"code": "bracelet-jeweled",
 	"class": "ItemWearable",
   "variantgroups": [
     {
@@ -12,7 +12,7 @@
     }
   ],
 	"shape": {
-		"base": "entity/humanoid/seraph/clothing/ring-jeweled"
+		"base": "entity/humanoid/seraph/clothing/bracelet-jeweled"
 	},
 	"storageFlags": 128,
 	"attributes": {

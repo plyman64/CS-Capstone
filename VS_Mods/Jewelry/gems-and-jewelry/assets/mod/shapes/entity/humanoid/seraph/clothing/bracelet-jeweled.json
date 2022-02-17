@@ -1,0 +1,134 @@
+{
+	"editor": {
+		"backDropShape": "entity/humanoid/seraph",
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"metal": [16,16],
+		"gem": [16,16]
+	},
+	"textures": {
+		"metal": "game:block/metal/plate/{metal}",
+		"gem": "game:block/stone/gem/{gem}"
+	},
+	"elements": [
+		{
+			"name": "Bracelet",
+			"stepParentName": "LowerArmL",
+			"from": [ 3.0, 0.0, 13.0 ], 
+			"to": [ 12.0, 5.0, 14.0 ], 
+			"rotationOrigin": [ -3.0, 0.0, 13.0 ],
+			"faces": {
+				"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.0, 5.0 ] },
+				"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+				"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.0, 5.0 ] },
+				"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+				"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.0, 1.0 ] },
+				"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.0, 1.0 ] }
+			},
+			"children": [
+				{
+					"name": "Cube2",
+					"from": [ 0.0, 0.0, -8.0 ], 
+					"to": [ 1.0, 5.0, 0.0 ], 
+					"rotationOrigin": [ 0.0, 0.0, -8.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 8.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 8.0 ] }
+					}
+				},
+				{
+					"name": "Cube3",
+					"from": [ 8.0, 0.0, -8.0 ], 
+					"to": [ 9.0, 5.0, 0.0 ], 
+					"rotationOrigin": [ 8.0, 0.0, -8.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.0, 5.0 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 8.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 8.0 ] }
+					}
+				},
+				{
+					"name": "Cube4",
+					"from": [ 1.0, 0.0, -8.0 ], 
+					"to": [ 3.0, 5.0, -7.0 ], 
+					"rotationOrigin": [ 1.0, 0.0, -8.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 5.0 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 5.0 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Cube5",
+					"from": [ 6.0, 0.0, -8.0 ], 
+					"to": [ 8.0, 5.0, -7.0 ], 
+					"rotationOrigin": [ 6.0, 0.0, -8.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 5.0 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 5.0 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 5.0 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Cube6",
+					"from": [ 3.0, 0.0, -8.0 ], 
+					"to": [ 6.0, 1.0, -7.0 ], 
+					"rotationOrigin": [ 3.0, 0.0, -8.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Cube7",
+					"from": [ 3.0, 4.0, -8.0 ], 
+					"to": [ 6.0, 5.0, -7.0 ], 
+					"rotationOrigin": [ 3.0, 4.0, -8.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 1.0 ] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Gem",
+			"stepParentName": "LowerArmL",
+			"from": [ 6.0, 1.0, 4.7 ], 
+			"to": [ 9.0, 4.0, 6.0 ], 
+			"rotationOrigin": [ 6.0, 1.0, 5.0 ],
+			"faces": {
+				"north": { "texture": "#gem", "uv": [ 0.0, 0.0, 3.0, 3.0 ] },
+				"east": { "texture": "#gem", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+				"south": { "texture": "#gem", "uv": [ 0.0, 0.0, 3.0, 3.0 ] },
+				"west": { "texture": "#gem", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+				"up": { "texture": "#gem", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+				"down": { "texture": "#gem", "uv": [ 0.0, 0.0, 3.0, 1.0 ] }
+			}
+		}
+	]}

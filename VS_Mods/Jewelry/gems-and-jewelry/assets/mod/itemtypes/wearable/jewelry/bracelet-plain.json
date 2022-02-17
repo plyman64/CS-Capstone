@@ -1,5 +1,5 @@
 {
-	"code": "ring-plain",
+	"code": "bracelet-plain",
 	"class": "ItemWearable",
 	"variantgroups": [
 		{
@@ -8,7 +8,7 @@
 		}
 	],
 	"shape": {
-		"base": "entity/humanoid/seraph/clothing/ring-plain"
+		"base": "entity/humanoid/seraph/clothing/bracelet-plain"
 	},
 	"storageFlags": 128,
 	"attributes": {

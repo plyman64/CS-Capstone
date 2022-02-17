@@ -1,7 +1,7 @@
 {
-	ingredientPattern: "R,G",
+	ingredientPattern: "B,G",
 	ingredients: {
-		"R": { type: "item", code: "ring-plain-*", name: "metal" },
+		"B": { type: "item", code: "bracelet-plain-*", name: "metal" },
 		"G": {
 			type: "item",
 			code: "game:gem-*-rough",
@@ -11,5 +11,5 @@
 	},
 	width: 1,
 	height: 2,
-	output: { type: "item", code: "ring-jeweled-{metal}-{gem}"}
+	output: { type: "item", code: "bracelet-jeweled-{metal}-{gem}"}
 }

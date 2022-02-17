@@ -7,7 +7,8 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textureSizes": {
-		"metal": [16, 16]
+		"metal": [16, 16],
+		"gem": [16,16]
 	},
 	"textures": {
 		"metal": "game:block/metal/plate/{metal}",
