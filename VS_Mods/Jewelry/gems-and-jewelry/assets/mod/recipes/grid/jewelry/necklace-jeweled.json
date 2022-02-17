@@ -1,0 +1,15 @@
+{
+	ingredientPattern: "N,G",
+	ingredients: {
+		"N": { type: "item", code: "necklace-plain-*", name: "metal" },
+		"G": {
+			type: "item",
+			code: "game:gem-*-rough",
+			name: "gem",
+			allowedVariants: [ "ruby", "sapphire", "emerald", "diamond" ]
+		}
+	},
+	width: 1,
+	height: 2,
+	output: { type: "item", code: "necklace-jeweled-{metal}-{gem}"}
+}

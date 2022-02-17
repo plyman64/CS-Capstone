@@ -21,7 +21,7 @@
 	"name": "6 Rings",
 	"output": {
 		"type": "item",
-		"code": "ring-{metal}",
+		"code": "ring-plain-{metal}",
 		"stacksize": 6
 	}
 }

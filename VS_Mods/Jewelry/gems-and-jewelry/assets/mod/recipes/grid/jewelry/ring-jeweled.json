@@ -1,0 +1,15 @@
+{
+	ingredientPattern: "R,G",
+	ingredients: {
+		"R": { type: "item", code: "ring-plain-*", name: "metal" },
+		"G": {
+			type: "item",
+			code: "game:gem-*-rough",
+			name: "gem",
+			allowedVariants: [ "ruby", "sapphire", "emerald", "diamond" ]
+		}
+	},
+	width: 1,
+	height: 2,
+	output: { type: "item", code: "ring-jeweled-{metal}-{gem}"}
+}

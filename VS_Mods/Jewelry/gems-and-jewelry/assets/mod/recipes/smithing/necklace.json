@@ -20,7 +20,7 @@
 	"name": "Necklace",
 	"output": {
 		"type": "item",
-		"code": "necklace-{metal}",
+		"code": "necklace-plain-{metal}",
 		"stacksize": 1
 	}
 }
