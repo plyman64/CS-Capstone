@@ -20,6 +20,7 @@
 		"clothescategory": "hand",
 		"warmth": 0,
 		"displaycaseable": true,
+		"shelvable": true,
 		"onDisplayTransform": {
 			"translation": {
 				"x": 0.04,
@@ -34,9 +35,9 @@
 		}
 	},
 	"textures": {
+		"seraph": { "base": "game:block/transparent" },
 		"metal": { "base": "game:block/metal/plate/{metal}" },
-		"gem": { "base": "game:block/stone/gem/{gem}" },
-		"seraph": { "base": "game:block/transparent" }
+		"gem": { "base": "game:block/stone/gem/{gem}" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],

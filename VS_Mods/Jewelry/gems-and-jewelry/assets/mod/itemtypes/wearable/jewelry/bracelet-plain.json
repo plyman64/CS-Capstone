@@ -16,6 +16,7 @@
 		"clothescategory": "hand",
 		"warmth": 0,
 		"displaycaseable": true,
+		"shelvable": true,
 		"onDisplayTransform": {
 			"translation": {
 				"x": 0.04,
@@ -30,8 +31,8 @@
 		}
 	},
 	"textures": {
-		"metal": { "base": "game:block/metal/plate/{metal}" },
-		"seraph": { "base": "game:block/transparent" }
+		"seraph": { "base": "game:block/transparent" },
+		"metal": { "base": "game:block/metal/plate/{metal}" }
 	},
 	"creativeinventory": {
 		"general": [ "*" ],
