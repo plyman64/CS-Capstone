@@ -20,7 +20,18 @@
 		"clothescategory": "neck",
 		"warmth": 0,
 		"displaycaseable": true,
-		"shelvable": true
+		"onDisplayTransform": {
+			"translation": {
+				"x": 0.1,
+				"y": -0.55,
+				"z": 0.3
+			},
+			"rotation": {
+				"x": 0,
+				"y": 90,
+				"z": -45
+			}
+		}
 	},
 	"textures": {
 		"metal": { "base": "game:block/metal/plate/{metal}" },

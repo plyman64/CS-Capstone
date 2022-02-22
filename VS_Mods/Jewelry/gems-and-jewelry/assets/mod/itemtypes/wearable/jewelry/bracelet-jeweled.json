@@ -1,16 +1,16 @@
 {
 	"code": "bracelet-jeweled",
 	"class": "ItemWearable",
-  "variantgroups": [
-    {
-      "code": "metal",
-      "states": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
-    },
-    {
-      "code": "gem",
-      "states": [ "ruby", "sapphire", "emerald", "diamond" ]
-    }
-  ],
+	"variantgroups": [
+		{
+			"code": "metal",
+			"states": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
+		},
+		{
+			"code": "gem",
+			"states": [ "ruby", "sapphire", "emerald", "diamond" ]
+		}
+	],
 	"shape": {
 		"base": "entity/humanoid/seraph/clothing/bracelet-jeweled"
 	},
@@ -20,7 +20,18 @@
 		"clothescategory": "hand",
 		"warmth": 0,
 		"displaycaseable": true,
-		"shelvable": true
+		"onDisplayTransform": {
+			"translation": {
+				"x": 0.04,
+				"y": -0.377,
+				"z": -0.12
+			},
+			"rotation": {
+				"x": 4,
+				"y": 165,
+				"z": 2
+			}
+		}
 	},
 	"textures": {
 		"metal": { "base": "game:block/metal/plate/{metal}" },
@@ -35,8 +46,8 @@
 	"renderAlphaTest": 0.25,
 	"fpHandTransform": {
 		"translation": {
-			"x": 0.6,
-			"y": 0,
+			"x": 0.15,
+			"y": -0.05,
 			"z": -0.5
 		},
 		"rotation": {
@@ -48,23 +59,22 @@
 	},
 	"tpHandTransform": {
 		"translation": {
-			"x": -0.9,
-			"y": -1,
-			"z": -1
+			"x": -0.7,
+			"y": -0.9,
+			"z": -0.9
 		},
 		"rotation": {
 			"x": -13,
 			"y": -64,
 			"z": 49
 		},
-		"scale": 0.55
+		"scale": 0.8
 	},
 	"guiTransform": {
-		"rotate": false,
 		"translation": {
-			"x": 5,
-			"y": 10,
-			"z": 50
+			"x": -11,
+			"y": 7,
+			"z": 100
 		},
 		"rotation": {
 			"x": 174,
@@ -73,10 +83,10 @@
 		},
 		"origin": {
 			"x": 0.52,
-			"y": 0.78,
+			"y": 0.7799,
 			"z": 0.5
 		},
-		"scale": 1.45
+		"scale": 3.92
 	},
 	"groundTransform": {
 		"translation": {

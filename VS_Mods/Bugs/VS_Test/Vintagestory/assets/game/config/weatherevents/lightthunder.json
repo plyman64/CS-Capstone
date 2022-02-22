@@ -1,0 +1,17 @@
+[
+	{
+		code: "lightthunder",
+		weight: 1,
+		strength: { avg: 0.4, var: 0.2 },
+		lightning: {
+			minTemperature: 12,
+			nearRate: 0.1,
+			distantRate: 0.4
+		},
+		particleSize: { avg: 0.85, var: 0.25 },
+		
+		weightFunction: "TestRainTemp",
+		minTemp: 12,
+		minRain: 0.2
+	}
+]
