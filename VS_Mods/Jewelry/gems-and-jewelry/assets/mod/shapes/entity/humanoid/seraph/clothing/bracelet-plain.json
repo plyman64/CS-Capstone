@@ -10,15 +10,14 @@
 		"metal": [16,16]
 	},
 	"textures": {
-		"metal": "game:block/metal/plate/{metal}"
 	},
 	"elements": [
 		{
 			"name": "origin",
 			"stepParentName": "LowerArmR",
-			"from": [ -1.47, 2.0, -2.44 ], 
-			"to": [ -1.47, 2.0, -2.44 ], 
-			"rotationOrigin": [ 3.9904, 1.7564, 0.4644 ],
+			"from": [ -1.47, 0.0, -2.44 ], 
+			"to": [ -1.47, 0.0, -2.44 ], 
+			"rotationOrigin": [ 1.25, 1.0, 1.0 ],
 			"rotationX": 1.5,
 			"rotationZ": -1.0,
 			"faces": {
@@ -34,7 +33,6 @@
 					"name": "Bracelet",
 					"from": [ 1.44, 0.0, 4.66 ], 
 					"to": [ 3.95, 1.7919, 5.0184 ], 
-					"rotationOrigin": [ -1.0752, 0.0, 4.659 ],
 					"faces": {
 						"north": { "texture": "#metal", "uv": [ 0.0, 1.0, 2.5, 2.5 ] },
 						"east": { "texture": "#metal", "uv": [ 9.0, 1.0, 9.5, 2.5 ] },

@@ -5,10 +5,29 @@
 		{
 			"code": "metal",
 			"states": [ "copper", "brass", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold" ]
+		},
+		{
+			"code": "side",
+			"loadFromProperties": "abstract/horizontalorientation"
 		}
 	],
-	"shape": {
-		"base": "entity/humanoid/seraph/clothing/bracelet-plain"
+	"shapeByType": {
+		"*-north": {
+			"base": "entity/humanoid/seraph/clothing/bracelet-plain",
+			"rotateY": 0
+		},
+		"*-east": {
+			"base": "entity/humanoid/seraph/clothing/bracelet-plain",
+			"rotateY": 270
+		},
+		"*-west": {
+			"base": "entity/humanoid/seraph/clothing/bracelet-plain",
+			"rotateY": 90
+		},
+		"*-south": {
+			"base": "entity/humanoid/seraph/clothing/bracelet-plain",
+			"rotateY": 180
+		}
 	},
 	"storageFlags": 128,
 	"attributes": {
@@ -35,9 +54,9 @@
 		"metal": { "base": "game:block/metal/plate/{metal}" }
 	},
 	"creativeinventory": {
-		"general": [ "*" ],
-		"items": [ "*" ],
-		"clothing": [ "*" ]
+		"general": [ "*-east" ],
+		"items": [ "*-east" ],
+		"clothing": [ "*-east" ]
 	},
 	"renderAlphaTest": 0.25,
 	"fpHandTransform": {
