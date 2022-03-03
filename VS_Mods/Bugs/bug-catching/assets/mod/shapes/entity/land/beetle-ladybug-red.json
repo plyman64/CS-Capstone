@@ -6,11 +6,10 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textureSizes": {
-		"beetle-ladybug-red": [64,64],
-		"bronze": [16,16]
+		"beetle-ladybug-red": [64,64]
 	},
 	"textures": {
-		"beetle-ladybug-red": "/Users/blyma/Documents/GitHub/CS-Capstone/VS_Mods/Bugs/bug-catching/mod/textures/entity/land/beetle-ladybug-red"
+		"beetle-ladybug-red": "entity/land/beetle-ladybug-red"
 	},
 	"elements": [
 		{
