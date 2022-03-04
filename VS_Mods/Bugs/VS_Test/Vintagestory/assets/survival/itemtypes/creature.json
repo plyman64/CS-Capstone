@@ -22,7 +22,8 @@
 			"salmon", "grub", 
 			"bear-female-black", "bear-female-brown", "bear-female-sun", "bear-female-panda", "bear-female-polar",
 			"bear-male-black", "bear-male-brown", "bear-male-sun", "bear-male-panda", "bear-male-polar",
-			"locust-bronze-hacked", "locust-corrupt-hacked"
+			"locust-bronze-hacked", "locust-corrupt-hacked",
+			"beetle-ladybug-red", "beetle-ladybug-orange", "beetle-ladybug-yellow"
 		] },
 	],
 	attributes: {
@@ -81,6 +82,8 @@
 		
 		"*-locust-bronze-hacked": { base: "entity/land/locust-bronze" },
 		"*-locust-corrupt-hacked": { base: "entity/land/locust-corrupt" },
+
+		"*-beetle-*": { base: "mod:entity/land/beetle" },
 
 		"*": { base: "entity/land/{type}" },
 	},
@@ -223,7 +226,17 @@
 		},
 		
 		"*-locust-bronze-hacked-*": { base: "entity/locust/bronze-hacked" },
-		"*-locust-corrupt-hacked-*": { base: "entity/locust/corrupt-hacked" }
+		"*-locust-corrupt-hacked-*": { base: "entity/locust/corrupt-hacked" },
+
+		"*-beetle-ladybug-red": {
+			"beetle-ladybug-red": { base: "mod:entity/land/beetle-ladybug-red" }
+		},
+		"*-beetle-ladybug-orange": {
+			"beetle-ladybug-orange": { base: "mod:entity/land/beetle-ladybug-orange" }
+		},
+		"*-beetle-ladybug-yellow": {
+			"beetle-ladybug-yellow": { base: "mod:entity/land/beetle-ladybug-yellow" }
+		}
 	},
 	creativeinventory: { "general": ["*"], "items": ["*"], "creatures": ["*"] },
 	materialDensity: 600,

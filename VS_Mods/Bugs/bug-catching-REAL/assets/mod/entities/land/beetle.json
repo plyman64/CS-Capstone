@@ -1,0 +1,117 @@
+{
+	"code": "beetle",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "ladybug-red", "ladybug-orange", "ladybug-yellow" ]
+		}
+	],
+	"class": "EntityAgent",
+	"hitboxSize": {
+		"x": 0.5,
+		"y": 0.3
+	},
+	"deadHitboxSize": {
+		"x": 0.5,
+		"y": 0.3
+	},
+	"eyeHeight": 0.1,
+	"drops": [],
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "entity/land/beetle" },
+		"texture": { "base": "entity/land/beetle-{type}" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 0,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 0,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 1,
+				"maxhealth": 1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.0002,
+						"animationSpeed": 0.8,
+						"animation": "walk",
+						"preferredLightLevel": 12
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"runtime": {
+				"group": "passive",
+				"maxQuantity": 8,
+				"minLightLevel": 18,
+				"chance": 0.03,
+				"lightLevelType": "MaxTimeOfDayLight",
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 1,
+					"var": 3
+				},
+				"minTemp": 5,
+				"minRain": 0.35,
+				"tryOnlySurface": true,
+				"insideBlockCodes": [ "game:flower-*", "game:tallgrass-*" ]
+			}
+		}
+	}
+}
