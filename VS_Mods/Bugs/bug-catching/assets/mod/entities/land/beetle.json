@@ -2,7 +2,7 @@
 	"code": "beetle",
 	"canClimb": true,
 	"canClimbAnywhere": true,
-	"climbTouchDistance": 0.1,
+	"climbTouchDistance": 0,
 	"rotateModelOnClimb": true,
 	"fallDamage": false,
 
@@ -93,7 +93,7 @@
 						"code": "wander",
 						"priority": 1.0,
 						"priorityForCancel": 1.35,
-						"movespeed": 0.0002,
+						"movespeed": 0.005,
 						"animationSpeed": 0.8,
 						"animation": "walk",
 						"preferredLightLevel": 12
