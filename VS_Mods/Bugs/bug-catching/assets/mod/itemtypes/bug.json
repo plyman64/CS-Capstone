@@ -1,0 +1,46 @@
+{
+	code: "creature",
+	class: "ItemCreature",
+	maxstacksize: 64,
+	variantgroups: [
+		{ code: "type", states: [
+			"beetle-ladybug-red", "beetle-ladybug-orange", "beetle-ladybug-yellow"
+		] },
+	],
+	shapeByType: {
+		"*-beetle-ladybug-red": {
+			"base": "entity/land/beetle-ladybug-red"
+		},
+		"*-beetle-ladybug-orange": {
+			"base": "entity/land/beetle-ladybug-orange"
+		},
+		"*-beetle-ladybug-yellow": {
+			"base": "entity/land/beetle-ladybug-yellow"
+		}
+	},
+	"texturesByType": {
+		"*-beetle-ladybug-red": {
+			"beetle-ladybug-red": { "base": "entity/land/beetle-ladybug-red" }
+		},
+		"*-beetle-ladybug-orange": {
+			"beetle-ladybug-orange": { "base": "entity/land/beetle-ladybug-orange" }
+		},
+		"*-beetle-ladybug-yellow": {
+			"beetle-ladybug-yellow": { "base": "entity/land/beetle-ladybug-yellow" }
+		}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "creatures": ["*"] },
+	materialDensity: 600,
+	guiTransformByType: {
+		
+	},
+	tpHandTransformByType: {
+		
+	},
+	fpHandTransformByType: {
+		
+	},
+	groundTransformByType: {
+
+	}
+}
