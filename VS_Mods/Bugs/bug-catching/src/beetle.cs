@@ -30,7 +30,7 @@ namespace BugCatchingMod {
 				return;
 			} else {
 
-				var stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("mod:beetle")));
+				var stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("bug-catching:beetle")));
 
 				if(!byEntity.TryGiveItemStack(stack)) {
 					byEntity.World.SpawnItemEntity(stack, this.ServerPos.XYZ);

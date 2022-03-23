@@ -1,5 +1,6 @@
 {
 	"code": "beetle",
+	"class": "entitybeetle",
 	"canClimb": true,
 	"canClimbAnywhere": true,
 	"climbTouchDistance": 0.01,
