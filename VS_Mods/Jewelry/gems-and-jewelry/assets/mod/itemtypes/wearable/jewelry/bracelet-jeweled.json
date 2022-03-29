@@ -20,7 +20,7 @@
 		"clothescategory": "hand",
 		"warmth": 0,
 		"displaycaseable": true,
-		"shelvable": true,
+		"shelvable": false,
 		"onDisplayTransform": {
 			"translation": {
 				"x": 0.04,
@@ -105,6 +105,6 @@
 			"y": 0.5,
 			"z": 0.5299
 		},
-		"scale": 1.26
+		"scale": 3.5
 	}
 }

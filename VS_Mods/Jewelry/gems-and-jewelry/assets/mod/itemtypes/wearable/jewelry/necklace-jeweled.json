@@ -20,18 +20,10 @@
 		"clothescategory": "neck",
 		"warmth": 0,
 		"displaycaseable": true,
-		"shelvable": true,
+		"shelvable": false,
 		"onDisplayTransform": {
-			"translation": {
-				"x": 0.1,
-				"y": -0.55,
-				"z": 0.3
-			},
-			"rotation": {
-				"x": 0,
-				"y": 90,
-				"z": -45
-			}
+			"translation": { "x": -0.01, "y": -0.55, "z": 0.35 },
+			"rotation": { "x": 0, "y": 90, "z": -45 }
 		}
 	},
 	"textures": {
