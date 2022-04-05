@@ -10,7 +10,7 @@
 	"variantgroups": [
 		{
 			"code": "type",
-			"states": [ "ladybug"]
+			"states": [ "ladybug" ]
 		},
 		{
 			"code": "color",

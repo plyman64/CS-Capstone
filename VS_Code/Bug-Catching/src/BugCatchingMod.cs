@@ -11,7 +11,7 @@ namespace BugCatching
 {
 	public class BugCatchingMod : ModSystem
 	{
-		//Vintagestory.API.Common.Entities.EntityProperties BeetleProperties = new Vintagestory.API.Common.Entities.EntityProperties();
+
 		public override void Start(ICoreAPI api)
 		{
 			api.RegisterEntity("EntityBeetle", typeof(EntityBeetle));

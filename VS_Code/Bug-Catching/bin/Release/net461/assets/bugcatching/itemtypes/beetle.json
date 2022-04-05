@@ -1,5 +1,5 @@
 {
-	"code": "beetle",
+	"code": "creature",
 	"class": "ItemCreature",
 	"maxstacksize": 64,
 	"variantgroups": [

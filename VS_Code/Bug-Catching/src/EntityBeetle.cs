@@ -25,7 +25,7 @@ namespace BugCatching {
 				return;
 			} else {
 
-				ItemStack stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("bugcatching:beetle" + this.Code)), 1);
+				ItemStack stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("bugcatching:creature-beetle-ladybug-red")), 1);
 
 				if(!byEntity.TryGiveItemStack(stack)) {
 					byEntity.World.SpawnItemEntity(stack, this.ServerPos.XYZ, null);
