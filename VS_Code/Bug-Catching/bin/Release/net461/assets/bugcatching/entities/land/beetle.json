@@ -1,0 +1,145 @@
+{
+	"code": "beetle",
+	"class": "EntityBeetle",
+	"canClimb": true,
+	"canClimbAnywhere": true,
+	"climbTouchDistance": 0.01,
+	"rotateModelOnClimb": true,
+	"fallDamage": false,
+
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "ladybug"]
+		},
+		{
+			"code": "color",
+			"states": ["red", "orange", "yellow"]
+		}
+	],
+	"hitboxSize": {
+		"x": 0.1,
+		"y": 0.1
+	},
+	"deadHitboxSize": {
+		"x": 0.1,
+		"y": 0.1
+	},
+	"eyeHeight": 0.1,
+	"drops": [],
+	"client": {
+		"renderer": "Shape",
+		"shape": { "base": "entity/land/beetle-{type}-{color}" },
+		"texture": { "base": "entity/land/beetle-{type}-{color}" },
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "interpolateposition" },
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 0,
+				"minSeconds": 300
+			}
+		],
+		"animations": [
+			{
+				"code": "die",
+				"animation": "die",
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": [ "dead" ] }
+			},
+			{
+				"code": "idle",
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" },
+			{
+				"code": "controlledphysics",
+				"stepHeight": 1.1251
+			},
+			{
+				"code": "despawn",
+				"minPlayerDistance": 8,
+				"belowLightLevel": 0,
+				"minSeconds": 300
+			},
+			{
+				"code": "health",
+				"currenthealth": 1,
+				"maxhealth": 1
+			},
+			{
+				"code": "floatupwhenstuck",
+				"onlyWhenDead": true
+			},
+			{ "code": "breathe" },
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "wander",
+						"priority": 1.0,
+						"priorityForCancel": 1.35,
+						"movespeed": 0.002,
+						"animationSpeed": 0.8,
+						"animation": "walk",
+						"preferredLightLevel": 12
+					},
+					{
+						"code": "idle",
+						"priority": 1.2,
+						"priorityForCancel": 1.35,
+						"minduration": 4000,
+						"maxduration": 6000,
+						"chance": 0.001,
+						"initialMinCoolDown": 2000,
+						"initialMaxCoolDown": 150000,
+						"mincooldown": 300000,
+						"maxcooldown": 10000000,
+						"animation": "think",
+						"animationSpeed": 1.25
+					},
+					{
+						"code": "lookaround",
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"runtime": {
+				"group": "passive",
+				"maxQuantity": 8,
+				"minLightLevel": 18,
+				"chance": 0.03,
+				"lightLevelType": "MaxTimeOfDayLight",
+				"groupSize": {
+					"dist": "invexp",
+					"avg": 1,
+					"var": 3
+				},
+				"minTemp": 5,
+				"minRain": 0.35,
+				"tryOnlySurface": true,
+				"insideBlockCodes": [ "game:flower-*", "game:tallgrass-*" ]
+			}
+		}
+	}
+}

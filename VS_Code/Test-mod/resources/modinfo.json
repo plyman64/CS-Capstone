@@ -1,0 +1,14 @@
+{
+	"type": "code",
+	"name": "HowtoExample",
+	"modid": "howtoexample",
+	"version": "1.3.0",
+	
+	"description" : "An example mod using VS Code and .NET",
+	"website": "https://github.com/copygirl/howto-example-mod",
+	"authors": [ "copygirl" ],
+	
+	"dependencies": {
+		"game": "1.15.0"
+	}
+}

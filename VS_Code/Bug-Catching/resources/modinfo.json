@@ -1,0 +1,14 @@
+{
+	"type": "code",
+	"name": "Bug-catching",
+	"modid": "Bug-catching",
+	"version": "1.3.0",
+	
+	"description" : "Adds cute buggys to the world that you can catch and keep in terrariums!",
+	"website": "",
+	"authors": [ "pepaigea" ],
+	
+	"dependencies": {
+		"game": "1.16.0"
+	}
+}
