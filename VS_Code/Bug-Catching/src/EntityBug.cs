@@ -4,13 +4,13 @@ using Vintagestory.API.MathTools;
 
 namespace BugCatching {
 
-	public class EntityBeetle : EntityAgent {
+	public class EntityBug : EntityAgent {
 
-		public static string NAME { get; } = "Beetle";
+		public static string NAME { get; } = "Bug";
 
 		Vintagestory.API.Common.Entities.EntityProperties properties = new Vintagestory.API.Common.Entities.EntityProperties();
 
-		public EntityBeetle() {
+		public EntityBug() {
 
 		}
 	
@@ -25,7 +25,9 @@ namespace BugCatching {
 				return;
 			} else {
 
-				ItemStack stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("bugcatching:creature-beetle-ladybug-red")), 1);
+				//base.World.Logger.Error("Not able to pick up bug", new object [1]);
+
+				ItemStack stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("bugcatching:bug-beetle-ladybug-red")), 1);
 
 				if(!byEntity.TryGiveItemStack(stack)) {
 					byEntity.World.SpawnItemEntity(stack, this.ServerPos.XYZ, null);

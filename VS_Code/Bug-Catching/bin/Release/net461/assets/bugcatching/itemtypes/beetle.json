@@ -1,6 +1,6 @@
 {
-	"code": "beetle",
-	"class": "ItemCreature",
+	"code": "bug",
+	"class": "ItemBug",
 	"maxstacksize": 64,
 	"variantgroups": [
 		{
