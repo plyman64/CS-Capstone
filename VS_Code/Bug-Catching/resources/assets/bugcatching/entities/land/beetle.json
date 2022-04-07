@@ -10,11 +10,15 @@
 	"variantgroups": [
 		{
 			"code": "type",
+			"states": [ "beetle" ]
+		},
+		{
+			"code": "style",
 			"states": [ "ladybug" ]
 		},
 		{
 			"code": "color",
-			"states": ["red", "orange", "yellow"]
+			"states": [ "red", "orange", "yellow" ]
 		}
 	],
 	"hitboxSize": {
@@ -29,8 +33,8 @@
 	"drops": [],
 	"client": {
 		"renderer": "Shape",
-		"shape": { "base": "entity/land/beetle-{type}-{color}" },
-		"texture": { "base": "entity/land/beetle-{type}-{color}" },
+		"shape": { "base": "entity/land/{type}-{style}-{color}" },
+		"texture": { "base": "entity/land/{type}-{style}-{color}" },
 		"behaviors": [
 			{ "code": "repulseagents" },
 			{

@@ -1,18 +1,24 @@
 {
-	"code": "creature",
+	"code": "beetle",
 	"class": "ItemCreature",
 	"maxstacksize": 64,
 	"variantgroups": [
-		{ "code": "type", "states": [
-			"ladybug"
-		] },
-		{ "code": "color", "states": [
-			"red", "orange", "yellow"
-		]}
+		{
+			"code": "type",
+			"states": [ "beetle" ]
+		},
+		{
+			"code": "style",
+			"states":[ "ladybug" ]
+		},
+		{
+			"code": "color",
+			"states": [ "red", "orange", "yellow" ]
+		}
 	],
 
-	"shape": { "base": "entity/land/beetle-{type}-{color}" },
-	"texture": { "base": "entity/land/beetle-{type}-{color}" },
+	"shape": { "base": "entity/land/{type}-{style}-{color}" },
+	"texture": { "base": "entity/land/{type}-{style}-{color}" },
 
 	"creativeinventory": { "general": ["*"], "items": ["*"], "creatures": ["*"] },
 	"materialDensity": 600,
