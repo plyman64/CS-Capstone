@@ -27,7 +27,7 @@ namespace BugCatching {
 
 				//base.World.Logger.Error("Not able to pick up bug", new object [1]);
 
-				ItemStack stack = new ItemStack(byEntity.World.GetItem(new AssetLocation("bugcatching:bug-beetle-ladybug-red")), 1);
+				ItemStack stack = new ItemStack(byEntity.World.GetItem(new AssetLocation(this.Code.Domain, base.CodeEndWithoutParts(0))));
 
 				if(!byEntity.TryGiveItemStack(stack)) {
 					byEntity.World.SpawnItemEntity(stack, this.ServerPos.XYZ, null);
