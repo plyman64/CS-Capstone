@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3EQ0cV0SB2nQzemYoTkS3Vhu/smq7gK9SYDx8ASpoXvCv++SWsreMGbnnrDJ4MUtmiy60s3Po132GSQDLmTp9Q==",
+  "dgSpecHash": "NYwl+CDosk7E4Stso5H8IIlAmqH4fhgf9hHp1Q27t+BJpDQfQLLdzgbYyvXl7Qw2EOhPCPJ1cAD7zcI+x72Mcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\blyma\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\paige.lyman\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\paige.lyman\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\paige.lyman\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net461\\1.0.2\\microsoft.netframework.referenceassemblies.net461.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
