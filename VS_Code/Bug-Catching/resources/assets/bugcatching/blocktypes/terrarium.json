@@ -1,0 +1,30 @@
+{
+    "code": "terrarium",
+    "class": "BlockTerrarium",
+    "shape": {"base": "bugcatching:block/terrarium"},
+    "creativeinventory": {"general": ["*"]},
+    "blockmaterial": "Glass",
+    "drawtype": "json",
+    "faceCullMode": "MergeMaterial",
+    "replaceable": 900,
+    "lightabsorbtion": 0,
+    "renderPass": "Transparent",
+    "vertexFlags": {
+        "zOffset": 2,
+        "shiny": true
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "sidesolid": {
+        "all": false
+    },
+    "textures": {
+        "glass": { "base": "bugcatching:block/terrarium/glass"},
+        "lid": { "base": "bugcatching:block/terrarium/lid", "overlays": ["block/slightlydarker"] },
+        "soil": { "base": "bugcatching:block/terrarium/soil", "overlays": ["block/slightlydarker"] }
+    },
+    "resistance": 0.25,
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock"
+}

@@ -16,6 +16,7 @@ namespace BugCatching
 		{
 			api.RegisterEntity("EntityBug", typeof(EntityBug));
 			api.RegisterItemClass("ItemBug", typeof(ItemBug));
+			api.RegisterBlockClass("BlockTerrarium", typeof(BlockTerrarium));
 		}
 		
 		public override void StartClientSide(ICoreClientAPI api)
