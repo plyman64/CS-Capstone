@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paige.lyman\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj": {}
+    "C:\\Users\\blyma\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paige.lyman\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj": {
+    "C:\\Users\\blyma\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paige.lyman\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj",
+        "projectUniqueName": "C:\\Users\\blyma\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj",
         "projectName": "BugCatching",
-        "projectPath": "C:\\Users\\paige.lyman\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj",
-        "packagesPath": "C:\\Users\\paige.lyman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paige.lyman\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\obj\\",
+        "projectPath": "C:\\Users\\blyma\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\BugCatching.csproj",
+        "packagesPath": "C:\\Users\\blyma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\blyma\\Documents\\GitHub\\CS-Capstone\\VS_Code\\Bug-Catching\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\paige.lyman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\blyma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net461"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,14 +43,6 @@
       "frameworks": {
         "net461": {
           "targetAlias": "net461",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.2, )",
-              "autoReferenced": true
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }

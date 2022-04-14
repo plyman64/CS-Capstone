@@ -5,15 +5,15 @@
 	
 	<ItemGroup>
 		<Reference Include="VintagestoryAPI">
-			<HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+			<HintPath>C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Mod_Test_Version\\VintageStory\VintagestoryAPI.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VintagestoryAPI">
-			<HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
+			<HintPath>C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Mod_Test_Version\VintageStory\Mods\VSEssentials.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VintagestoryAPI">
-			<HintPath>$(VINTAGE_STORY)/Mods/VSSurvivalMod.dll</HintPath>
+			<HintPath>C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Mod_Test_Version\VintageStory\Mods\VSSurvivalMod.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 	</ItemGroup>

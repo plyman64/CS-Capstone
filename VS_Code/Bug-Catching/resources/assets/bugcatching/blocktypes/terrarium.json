@@ -3,28 +3,20 @@
     "class": "BlockTerrarium",
     "shape": {"base": "bugcatching:block/terrarium"},
     "creativeinventory": {"general": ["*"]},
-    "blockmaterial": "Glass",
+    "blockmaterial": "Wood",
     "drawtype": "json",
-    "faceCullMode": "MergeMaterial",
     "replaceable": 900,
     "lightabsorbtion": 0,
-    "renderPass": "Transparent",
-    "vertexFlags": {
-        "zOffset": 2,
-        "shiny": true
-    },
-    "sideopaque": {
-        "all": false
-    },
-    "sidesolid": {
-        "all": false
-    },
     "textures": {
         "glass": { "base": "bugcatching:block/terrarium/glass"},
-        "lid": { "base": "bugcatching:block/terrarium/lid", "overlays": ["block/slightlydarker"] },
-        "soil": { "base": "bugcatching:block/terrarium/soil", "overlays": ["block/slightlydarker"] }
+        "lid": { "base": "bugcatching:block/terrarium/lid"},
+        "soil": { "base": "bugcatching:block/terrarium/soil"}
     },
     "resistance": 0.25,
+    "sideopaque": { "all": false },
+	"sideao": { "all": true },
+	"emitsideao": { "all": false },
+	"sidesolid": { "all": false },
     "heldTpIdleAnimation": "holdbothhandslarge",
     "heldTpUseAnimation": "twohandplaceblock"
 }
