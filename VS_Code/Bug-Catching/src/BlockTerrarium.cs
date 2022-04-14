@@ -9,7 +9,10 @@ namespace BugCatching {
         public BlockTerrarium() {
             this.hasBugInside = false;
         }
-        public virtual bool OnBlockInteractStart(float secondsUsed, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel) {
+        public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref EnumHandling handling) {
+
+            ItemSlot activeHotbarSlot = new ItemSlot();
+            activeHotbarSlot = byPlayer.InventoryManager.ActiveHotbarSlot;
 
             //If there is already a bug in the terrarium
             if(!hasBugInside) {
@@ -18,7 +21,7 @@ namespace BugCatching {
             }
 
             ItemStack currentItemStack = new ItemStack();
-            currentItemStack = byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack;
+            currentItemStack = activeHotbarSlot.Itemstack;
 
             api.Logger.Debug("currentItemStack.Item.FirstCodePart: " + currentItemStack.Item.FirstCodePart());
             bool holdingBug = (currentItemStack.Item.FirstCodePart() == "beetle");
@@ -31,7 +34,7 @@ namespace BugCatching {
 
                 hasBugInside = true;
 
-                currentItemStack.StackSize--;
+                activeHotbarSlot.TakeOut(1);
             }
 
             base.OnBlockInteractStop(secondsUsed, world, byPlayer, blockSel);
