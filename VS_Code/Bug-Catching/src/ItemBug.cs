@@ -18,6 +18,11 @@ namespace BugCatching
 		// Token: 0x060002C5 RID: 709 RVA: 0x00027654 File Offset: 0x00025854
 		public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
 		{
+
+			if(blockSel.GetType().Name == "BlockTerrarium") {
+				return;
+			}
+
 			bool flag = byEntity.Controls.Sneak && blockSel != null;
 			if (flag)
 			{
