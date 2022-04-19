@@ -9,35 +9,33 @@ namespace BugCatching {
         public BlockTerrarium() {
             this.hasBugInside = false;
         }
-        public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref EnumHandling handling) {
+        public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel) {
 
-            ItemSlot activeHotbarSlot = new ItemSlot();
-            activeHotbarSlot = byPlayer.InventoryManager.ActiveHotbarSlot;
 
-            //If there is already a bug in the terrarium
-            if(!hasBugInside) {
+            //If there is already a bug in the terrarium, do nothing
+            if(hasBugInside) {
                 api.Logger.Debug("Bug already in terrarium!");
                 return false;
             }
 
             ItemStack currentItemStack = new ItemStack();
-            currentItemStack = activeHotbarSlot.Itemstack;
+            currentItemStack = byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack;
 
-            api.Logger.Debug("currentItemStack.Item.FirstCodePart: " + currentItemStack.Item.FirstCodePart());
-            bool holdingBug = (currentItemStack.Item.FirstCodePart() == "beetle");
+            bool holdingBug = (currentItemStack.Item.FirstCodePart() == "bug");
 
+            //If the player is holding a bug, spawn that bug inside the terrarium
             if(holdingBug) {
                 api.Logger.Debug("Spawning bug in terrarium!");
 
                 EntityBug bug = new EntityBug();
-                bug.TeleportTo(blockSel.Position);
+                world.SpawnEntity(bug);
+                //bug.TeleportTo(blockSel.Position);
 
                 hasBugInside = true;
 
-                activeHotbarSlot.TakeOut(1);
+                //Remove one bug from the active slot
+                byPlayer.InventoryManager.ActiveHotbarSlot.TakeOut(1);
             }
-
-            base.OnBlockInteractStop(secondsUsed, world, byPlayer, blockSel);
 
             return true;
         }
