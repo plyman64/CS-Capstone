@@ -1,4 +1,3 @@
-using System;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
@@ -22,7 +21,7 @@ namespace BugCatching
 			float offset;
 			blockSel.DidOffset = false;
 
-			if(blockSel.GetType().Name == "BlockTerrarium") {
+			if(byEntity) {
 				api.Logger.Debug("Looking at terrarium");
 				offset = -0.5f;
 			} else {

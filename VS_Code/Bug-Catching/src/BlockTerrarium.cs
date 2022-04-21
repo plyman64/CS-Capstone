@@ -12,6 +12,7 @@ namespace BugCatching {
         public BlockTerrarium() {
             this.hasBugInside = false;
         }
+
         /*
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel) {
 
