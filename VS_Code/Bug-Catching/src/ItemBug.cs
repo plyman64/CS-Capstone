@@ -18,9 +18,15 @@ namespace BugCatching
 		// Token: 0x060002C5 RID: 709 RVA: 0x00027654 File Offset: 0x00025854
 		public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
 		{
+			api.Logger.Debug("blockSel.GetType().Name: " + blockSel.GetType().Name);
+			float offset;
+			blockSel.DidOffset = false;
 
 			if(blockSel.GetType().Name == "BlockTerrarium") {
-				return;
+				api.Logger.Debug("Looking at terrarium");
+				offset = -0.5f;
+			} else {
+				offset = 0.5f;
 			}
 
 			bool flag = byEntity.Controls.Sneak && blockSel != null;
@@ -57,15 +63,31 @@ namespace BugCatching
 						bool flag6 = entity != null;
 						if (flag6)
 						{
-							entity.ServerPos.X = (double)((float)(blockSel.Position.X + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.X)) + 0.5f);
-							entity.ServerPos.Y = (double)(blockSel.Position.Y + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Y));
-							entity.ServerPos.Z = (double)((float)(blockSel.Position.Z + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Z)) + 0.5f);
-							entity.ServerPos.Yaw = (float)byEntity.World.Rand.NextDouble() * 2f * 3.1415927f;
-							entity.Pos.SetFrom(entity.ServerPos);
-							entity.PositionBeforeFalling.Set(entity.ServerPos.X, entity.ServerPos.Y, entity.ServerPos.Z);
-							entity.Attributes.SetString("origin", "playerplaced");
-							byEntity.World.SpawnEntity(entity);
-							handHandling = EnumHandHandling.PreventDefaultAction;
+							if(blockSel.GetType().Name == "BlockTerrarium") {
+
+								entity.ServerPos.X = (double)((float)(blockSel.Position.X));
+								entity.ServerPos.Y = (double)(blockSel.Position.Y);
+								entity.ServerPos.Z = (double)((float)(blockSel.Position.Z));
+								entity.ServerPos.Yaw = (float)byEntity.World.Rand.NextDouble() * 2f * 3.1415927f;
+								entity.Pos.SetFrom(entity.ServerPos);
+								entity.PositionBeforeFalling.Set(entity.ServerPos.X, entity.ServerPos.Y, entity.ServerPos.Z);
+								entity.Attributes.SetString("origin", "playerplaced");
+								byEntity.World.SpawnEntity(entity);
+								handHandling = EnumHandHandling.PreventDefaultAction;
+
+							} else {
+
+								entity.ServerPos.X = (double)((float)(blockSel.Position.X + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.X)) + 0.5f);
+								entity.ServerPos.Y = (double)(blockSel.Position.Y + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Y));
+								entity.ServerPos.Z = (double)((float)(blockSel.Position.Z + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Z)) + 0.5f);
+								entity.ServerPos.Yaw = (float)byEntity.World.Rand.NextDouble() * 2f * 3.1415927f;
+								entity.Pos.SetFrom(entity.ServerPos);
+								entity.PositionBeforeFalling.Set(entity.ServerPos.X, entity.ServerPos.Y, entity.ServerPos.Z);
+								entity.Attributes.SetString("origin", "playerplaced");
+								byEntity.World.SpawnEntity(entity);
+								handHandling = EnumHandHandling.PreventDefaultAction;
+
+							}
 						}
 					}
 				}

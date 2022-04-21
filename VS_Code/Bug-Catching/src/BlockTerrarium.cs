@@ -12,6 +12,7 @@ namespace BugCatching {
         public BlockTerrarium() {
             this.hasBugInside = false;
         }
+        /*
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel) {
 
 
@@ -79,25 +80,11 @@ namespace BugCatching {
                         }
                     }
                 }
-                /*else
-                {
-                    base.OnHeldInteractStart(slot, byEntity, blockSel, entitySel, firstEvent, ref handHandling);
-                }*/
-
-                //EntityBug bug = new EntityBug();
-                //EntityProperties properties = new EntityProperties();
-                //bug.Initialize(properties, api, byPlayer.WorldData.EntityPlayer.InChunkIndex3d);
-                //world.SpawnEntity(bug);
-                //bug.TeleportTo(blockSel.Position);
-
-                hasBugInside = true;
-
-                //Remove one bug from the active slot
-                byPlayer.InventoryManager.ActiveHotbarSlot.TakeOut(1);
             }
 
             return true;
         }
+        */
 
     }
 }
