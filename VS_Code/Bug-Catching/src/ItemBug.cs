@@ -15,19 +15,23 @@ namespace BugCatching
 		}
 
 		// Token: 0x060002C5 RID: 709 RVA: 0x00027654 File Offset: 0x00025854
+
+		/*
 		public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
 		{
 			double posX, posY, posZ;
+
+			Block clickedBlock = byEntity.World.BlockAccessor.GetBlock(blockSel.Position);
 			
-
-			if(byEntity.World.BlockAccessor.GetBlock(blockSel.Position).FirstCodePart() == "terrarium") {
+			//If the player clicked on a terrarium
+			if(clickedBlock.FirstCodePart() == "terrarium") {
 				
-				api.Logger.Debug("Looking at terrarium");
-
+				//Set spawn location to above the terrarium dirt
 				posX = (double)((float)(blockSel.Position.X) + 0.5f);
 				posY = (double)((float)(blockSel.Position.Y) + 0.1875f);
 				posZ = (double)((float)(blockSel.Position.Z) + 0.5f);
 
+			//Otherwise, keep normal spawn location
 			} else {
 				posX = (double)((float)(blockSel.Position.X + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.X)) + 0.5f);
 				posY = (double)(blockSel.Position.Y + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Y));
@@ -86,6 +90,8 @@ namespace BugCatching
 				base.OnHeldInteractStart(slot, byEntity, blockSel, entitySel, firstEvent, ref handHandling);
 			}
 		}
+		*/
+		
 
 		// Token: 0x060002C6 RID: 710 RVA: 0x000278F8 File Offset: 0x00025AF8
 		public override WorldInteraction[] GetHeldInteractionHelp(ItemSlot inSlot)

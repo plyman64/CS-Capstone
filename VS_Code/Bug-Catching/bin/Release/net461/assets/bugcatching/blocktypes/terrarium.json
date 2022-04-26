@@ -3,7 +3,7 @@
     "class": "BlockTerrarium",
     "shape": {"base": "bugcatching:block/terrarium"},
     "creativeinventory": {"general": ["*"]},
-    "blockmaterial": "Wood",
+    "blockmaterial": "Glass",
     "drawtype": "json",
     "replaceable": 900,
     "lightabsorbtion": 0,

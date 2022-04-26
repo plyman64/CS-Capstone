@@ -1,4 +1,3 @@
-using Vintagestory.API.Util;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
@@ -7,52 +6,46 @@ namespace BugCatching {
 
     public class BlockTerrarium : Block {
 
-        public bool hasBugInside;
+        public int numBugsInside, maxBugs;
 
         public BlockTerrarium() {
-            this.hasBugInside = false;
+            numBugsInside = 0;
+            maxBugs = 3;
         }
 
-        /*
-        public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel) {
+        public bool hasMaxBugs() {
+            return (numBugsInside == maxBugs);
+        }
 
+        public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
+        {
+            ItemSlot slot = byPlayer.InventoryManager.ActiveHotbarSlot;
 
-            //If there is already a bug in the terrarium, do nothing
-            if(hasBugInside) {
-                api.Logger.Debug("Bug already in terrarium!");
-                return false;
-            }
+            bool holdingBug = (slot.Itemstack.Item.FirstCodePart() == "bug");
 
-            ItemStack currentItemStack = new ItemStack();
-            currentItemStack = byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack;
+            if(holdingBug && !(this.hasMaxBugs())) {
 
-            bool holdingBug = (currentItemStack.Item.FirstCodePart() == "bug");
+                bool flag = byPlayer.Entity.Controls.Sneak && blockSel != null;
 
-            //If the player is holding a bug, spawn that bug inside the terrarium
-            if(holdingBug) {
-                api.Logger.Debug("Spawning bug in terrarium!");
-
-                EntityBug bug = new EntityBug();
-
-                bool flag = bug.Controls.Sneak && blockSel != null;
+                //spawn the bug in the terrarium
                 if (flag)
                 {
-                    //IPlayer player = bug.World.PlayerByUid((bug as EntityPlayer).PlayerUID);
-                    bool flag2 = !bug.World.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.BuildOrBreak);
+                    IPlayer player = world.PlayerByUid((byPlayer as EntityPlayer).PlayerUID);
+                    bool flag2 = !world.Claims.TryAccess(player, blockSel.Position, EnumBlockAccessFlags.BuildOrBreak);
                     if (!flag2)
                     {
-                        bool flag3 = byPlayer.WorldData.CurrentGameMode != EnumGameMode.Creative;
+                        bool flag3 = !(byPlayer is EntityPlayer) || player.WorldData.CurrentGameMode != EnumGameMode.Creative;
                         if (flag3)
                         {
-                            byPlayer.InventoryManager.ActiveHotbarSlot.TakeOut(1);
-                            byPlayer.InventoryManager.ActiveHotbarSlot.MarkDirty();
+                            slot.TakeOut(1);
+                            slot.MarkDirty();
                         }
                         AssetLocation assetLocation = new AssetLocation(this.Code.Domain, base.CodeEndWithoutParts(0));
-                        EntityProperties entityType = bug.World.GetEntityType(assetLocation);
+                        EntityProperties entityType = world.GetEntityType(assetLocation);
                         bool flag4 = entityType == null;
                         if (flag4)
                         {
-                            bug.World.Logger.Error("ItemCreature: No such entity - {0}", new object[]
+                            world.Logger.Error("ItemCreature: No such entity - {0}", new object[]
                             {
                                 assetLocation
                             });
@@ -64,28 +57,32 @@ namespace BugCatching {
                         }
                         else
                         {
-                            Entity entity = bug.World.ClassRegistry.CreateEntity(entityType);
+                            Entity entity = world.ClassRegistry.CreateEntity(entityType);
                             bool flag6 = entity != null;
                             if (flag6)
                             {
-                                entity.ServerPos.X = (double)((float)(blockSel.Position.X - 0.5f));
-                                entity.ServerPos.Y = (double)(blockSel.Position.Y + (blockSel.DidOffset ? 0 : blockSel.Face.Normali.Y));
-                                entity.ServerPos.Z = (double)((float)(blockSel.Position.Z - 0.5f));
-                                entity.ServerPos.Yaw = (float)bug.World.Rand.NextDouble() * 2f * 3.1415927f;
+                                entity.ServerPos.X = (double)((float)(blockSel.Position.X) + 0.5f);
+                                entity.ServerPos.Y = (double)((float)(blockSel.Position.Y) + 0.1875f);
+                                entity.ServerPos.Z = (double)((float)(blockSel.Position.Z) + 0.5f);
+                                entity.ServerPos.Yaw = (float)world.Rand.NextDouble() * 2f * 3.1415927f;
                                 entity.Pos.SetFrom(entity.ServerPos);
                                 entity.PositionBeforeFalling.Set(entity.ServerPos.X, entity.ServerPos.Y, entity.ServerPos.Z);
                                 entity.Attributes.SetString("origin", "playerplaced");
-                                bug.World.SpawnEntity(entity);
-                                //handHandling = EnumHandHandling.PreventDefaultAction;
+                                world.SpawnEntity(entity);
+                                //byPlayer.handHandling = EnumHandHandling.PreventDefaultAction;
+                                return true;
                             }
                         }
                     }
                 }
+            } else {
+                //Red text: "Maximum number of bugs inside terrarium
+                ICoreClientAPI coreClientAPI = api as ICoreClientAPI;
+                if (coreClientAPI != null) {
+                    coreClientAPI.TriggerIngameError(this, "terrariumFull", "Terrarium is full");
+                }
             }
-
-            return true;
+            return false;
         }
-        */
-
     }
 }
