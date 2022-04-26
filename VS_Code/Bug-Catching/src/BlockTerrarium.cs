@@ -20,37 +20,51 @@ namespace BugCatching {
         public override bool OnBlockInteractStart(IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel)
         {
             ItemSlot slot = byPlayer.InventoryManager.ActiveHotbarSlot;
+            api.Logger.Debug("Made it past ItemSlot");
 
-            bool holdingBug = (slot.Itemstack.Item.FirstCodePart() == "bug");
+            Item item = slot.Itemstack.Item;
+            api.Logger.Debug("Made it past Item");
 
-            if(holdingBug && !(this.hasMaxBugs())) {
+            api.Logger.Debug("Slot empty? " + slot.Empty);
+            api.Logger.Debug("item firstCodePart: " + item.FirstCodePart());
+
+            if(slot.Empty || item.FirstCodePart() != "bug") {
+                api.Logger.Debug("Returning false");
+                return false;
+            }
+
+            if(!(hasMaxBugs())) {
+                api.Logger.Debug("Made it past first if");
 
                 bool flag = byPlayer.Entity.Controls.Sneak && blockSel != null;
+                api.Logger.Debug("Made it past flag");
 
                 //spawn the bug in the terrarium
                 if (flag)
                 {
-                    IPlayer player = world.PlayerByUid((byPlayer as EntityPlayer).PlayerUID);
-                    bool flag2 = !world.Claims.TryAccess(player, blockSel.Position, EnumBlockAccessFlags.BuildOrBreak);
+                    //IPlayer player = world.PlayerByUid((byPlayer as EntityPlayer).PlayerUID);
+                    api.Logger.Debug("Made it past IPlayer");
+
+                    bool flag2 = !world.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.BuildOrBreak);
+                    api.Logger.Debug("Made it past flag2");
+
                     if (!flag2)
                     {
-                        bool flag3 = !(byPlayer is EntityPlayer) || player.WorldData.CurrentGameMode != EnumGameMode.Creative;
+                        AssetLocation assetLocation = new AssetLocation(slot.Itemstack.Item.Code.Domain, slot.Itemstack.Item.CodeEndWithoutParts(0));
+                        api.Logger.Debug("Made it past AssetLocation: " + assetLocation.ToString());
+                        EntityProperties entityType = world.GetEntityType(assetLocation);
+                        api.Logger.Debug("Made it past EntityProperties");
+                        bool flag3 = entityType == null;
                         if (flag3)
                         {
-                            slot.TakeOut(1);
-                            slot.MarkDirty();
-                        }
-                        AssetLocation assetLocation = new AssetLocation(this.Code.Domain, base.CodeEndWithoutParts(0));
-                        EntityProperties entityType = world.GetEntityType(assetLocation);
-                        bool flag4 = entityType == null;
-                        if (flag4)
-                        {
+                            api.Logger.Debug("Made it past flag4 and 4th if");
                             world.Logger.Error("ItemCreature: No such entity - {0}", new object[]
                             {
                                 assetLocation
                             });
-                            bool flag5 = this.api.World.Side == EnumAppSide.Client;
-                            if (flag5)
+                            bool flag4 = this.api.World.Side == EnumAppSide.Client;
+                            api.Logger.Debug("Made it past flag5");
+                            if (flag4)
                             {
                                 (this.api as ICoreClientAPI).TriggerIngameError(this, "nosuchentity", "No such entity '{0}' loaded.");
                             }
@@ -58,8 +72,9 @@ namespace BugCatching {
                         else
                         {
                             Entity entity = world.ClassRegistry.CreateEntity(entityType);
-                            bool flag6 = entity != null;
-                            if (flag6)
+                            api.Logger.Debug("Made it past CreateEntity()");
+                            bool flag5 = entity != null;
+                            if (flag5)
                             {
                                 entity.ServerPos.X = (double)((float)(blockSel.Position.X) + 0.5f);
                                 entity.ServerPos.Y = (double)((float)(blockSel.Position.Y) + 0.1875f);
@@ -70,6 +85,17 @@ namespace BugCatching {
                                 entity.Attributes.SetString("origin", "playerplaced");
                                 world.SpawnEntity(entity);
                                 //byPlayer.handHandling = EnumHandHandling.PreventDefaultAction;
+                                api.Logger.Debug("Made it past SpawnEntity");
+
+                                bool flag6 = !(byPlayer is EntityPlayer) || byPlayer.WorldData.CurrentGameMode != EnumGameMode.Creative;
+                                api.Logger.Debug("Made it past flag3");
+
+                                if (flag6)
+                                {
+                                    slot.TakeOut(1);
+                                    slot.MarkDirty();
+                                    api.Logger.Debug("Made it past takeOut() and markDirty()");
+                                }
                                 return true;
                             }
                         }
@@ -77,10 +103,10 @@ namespace BugCatching {
                 }
             } else {
                 //Red text: "Maximum number of bugs inside terrarium
-                ICoreClientAPI coreClientAPI = api as ICoreClientAPI;
-                if (coreClientAPI != null) {
-                    coreClientAPI.TriggerIngameError(this, "terrariumFull", "Terrarium is full");
-                }
+                //ICoreClientAPI coreClientAPI = this.api as ICoreClientAPI;
+                //if (coreClientAPI != null) {
+                //    coreClientAPI.TriggerIngameError(this, "terrariumFull", "Terrarium is full");
+                //}
             }
             return false;
         }

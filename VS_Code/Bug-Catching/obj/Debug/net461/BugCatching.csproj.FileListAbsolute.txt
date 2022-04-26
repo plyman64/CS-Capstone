@@ -1,9 +1,0 @@
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\bin\Debug\net461\BugCatching.dll
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\bin\Debug\net461\BugCatching.pdb
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.csproj.AssemblyReference.cache
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.AssemblyInfoInputs.cache
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.AssemblyInfo.cs
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.csproj.CoreCompileInputs.cache
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.dll
-C:\Users\paige.lyman\Documents\GitHub\CS-Capstone\VS_Code\Bug-Catching\obj\Debug\net461\BugCatching.pdb
